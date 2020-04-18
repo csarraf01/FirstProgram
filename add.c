@@ -1,9 +1,10 @@
 #include<stdio.h>
 int add(int a,int b)
 {
-  int sum;
-  sum=a+b;
-  return sum;
+  if(b==0)
+  return a;
+  else
+  return (1+add(a,b-1));
 }
 void main()
 {
