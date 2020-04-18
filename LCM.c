@@ -1,8 +1,8 @@
 #include<stdio.h>
+ int temp=1;
 int lcm(int a, int b)
 {
-  static int temp=1;
-  if(temp%a==0&&temp%b==0)
+   if(temp%a==0&&temp%b==0)
   return temp;
   else
   {
@@ -15,6 +15,7 @@ void main()
 {
   int x,y;
   printf("Enter the two numbers\n");
+  scanf("%d%d",&x,&y);
   int l=lcm(x,y);
   printf("Lcm of the two numbers %d and /d is %d ",x,y,l);
 }
