@@ -3,13 +3,13 @@
 void main()
 {
 
-    int data[3][3],i,j;
+    int num[3][3],i,j;
     printf("Enter the numbers\n");
     for(i=0;i<3;i++)
     {       
         for(j=0;j<3;j++)
         {    
-            scanf("%d",(*(data+i)+j));
+            scanf("%d",(*(num+i)+j));
         }
     }
     printf("Display the numbers in a matrix form");
@@ -18,7 +18,7 @@ void main()
         printf("\n");
         for(j=0;j<3;j++)
         {
-            printf("%d ",*(*(data+i)+j));
+            printf("%d ",*(*(num+i)+j));
         }
     }
     printf("Display the sum of diagonal numbers");
@@ -28,7 +28,7 @@ void main()
         for(j=0;j<3;j++)
         {    
             if(i==j)
-            sum=sum+data[i][j];
+            sum=sum+num[i][j];
         }
     }
     printf("%d",sum);
