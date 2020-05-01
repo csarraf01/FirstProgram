@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
       FILE *fp,*fp1;
 
@@ -33,4 +33,5 @@ void main()
       fclose(fp);
       fclose(fp1);
       getch();
+     return 0;
 }
